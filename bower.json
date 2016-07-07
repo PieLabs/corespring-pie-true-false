@@ -1,0 +1,8 @@
+{
+  "name" : "corespring-pie-true-false",
+  "version" : "1.0.0",
+  "main" : "corespring-pie-true-false.html",
+  "dependencies" : {
+    "corespring-true-false" : "git@bitbucket.org:pielibs:corespring-true-false.git"
+  }
+}
