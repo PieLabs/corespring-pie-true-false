@@ -3,6 +3,7 @@
   "version" : "1.0.0",
   "main" : "corespring-pie-true-false.html",
   "dependencies" : {
-    "corespring-true-false" : "git@bitbucket.org:pielibs:corespring-true-false.git"
+    "polymer": "Polymer/polymer#^1.0.0",
+    "corespring-true-false" : "git@bitbucket.org:pielibs/corespring-true-false.git"
   }
 }

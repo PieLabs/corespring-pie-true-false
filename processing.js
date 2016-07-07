@@ -1,8 +1,6 @@
 exports.state = function(env, question, session){
   return {
-    model: {
-      prompt: 'this is a test'
-    },
+    prompt: question.model.prompt, 
     disabled: true 
   }
 }
