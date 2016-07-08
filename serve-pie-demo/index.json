@@ -1,7 +1,8 @@
 {
   "components" : [
     {
-      "id" : { "name" : "corespring-pie-true-false", "version" : "1.0.0" },
+      "id" : "one",
+      "component" : { "name" : "corespring-pie-true-false", "version" : "1.0.0" },
       "model" : {
         "prompt" : "A is the 1st letter of the alphabet",
         "correctResponse" : {
