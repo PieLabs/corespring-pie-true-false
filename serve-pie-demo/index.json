@@ -4,7 +4,23 @@
       "id" : "one",
       "component" : { "name" : "corespring-pie-true-false", "version" : "1.0.0" },
       "model" : {
-        "prompt" : "A is the 1st letter of the alphabet",
+        "labels" : {
+          "en_US" : {
+            "prompt" : "A is the 1st letter of the alphabet",
+            "true" : "true",
+            "false" : "false",
+            "show" : "Show correct answer",
+            "hide" : "My answer"
+          },
+          "es_ES" : {
+            "prompt" : "'A' es la primera letra del alfabeto",
+            "true" : "verdado",
+            "false" : "falso",
+            "show" : "Mostrar la requesta correcta",
+            "hide" : "Escondar respuesta correcta"
+          }
+        },
+        "default_locale" : "en_US",
         "correctResponse" : {
           "value" : true
         }
