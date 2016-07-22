@@ -34,12 +34,18 @@
   Polymer({
     is: 'corespring-pie-true-false',
     properties: {
-      session: {type: Object},
-      state: {type: Object}
+      session: {type: Object, observer: '_onSessionChange'},
+      state: {type: Object, observer: '_onStateChange'}
     },
      observers: [
       '_onClassNameChanged(state.className)'
     ],
+    _onSessionChange: function(n){
+      console.log('_onSessionChange', n);
+    },
+    _onStateChange: function(n){
+      console.log('_onStateChange', n);
+    },
     _onClassNameChanged: function(className){
       if(className){
         this.setAttribute('class', className);
