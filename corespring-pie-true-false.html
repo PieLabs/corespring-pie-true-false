@@ -2,7 +2,32 @@
 
 <dom-module is="corespring-pie-true-false">
   <template>
-    <corespring-true-false state="{{state}}" session="{{session}}"></corespring-true-false>
+    <style>
+
+      :host(.white_on_black){
+        background-color: red;
+        --true-false-color: white;
+        --true-false-prompt-color: white
+      }
+      
+      :host(.black_on_rose){
+        background-color: red;
+        --true-false-color: black;
+      }
+
+    </style>
+    <corespring-true-false 
+      disabled="{{state.disabled}}"
+      selection="{{session.selected}}" 
+      correctness="{{state.correctness}}"
+      prompt="{{state.prompt}}"
+      correct-response="{{state.correctResponse}}"
+      true-label="{{state.labels.true}}"
+      false-label="{{state.labels.false}}"
+      show-label="{{state.labels.show}}"
+      hide-label="{{state.labels.hide}}"
+      >
+    </corespring-true-false>
  </template>
 </dom-module>
 <script>
@@ -11,6 +36,15 @@
     properties: {
       session: {type: Object},
       state: {type: Object}
-    }
+    },
+     observers: [
+      '_onClassNameChanged(state.className)'
+    ],
+    _onClassNameChanged: function(className){
+      if(className){
+        this.setAttribute('class', className);
+        this.updateStyles();
+      }
+    },
   });
 </script>

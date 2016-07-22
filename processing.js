@@ -18,7 +18,7 @@ exports.state = function(question, session, env){
   }
 
   out.labels = question.model.labels[locale];
-
+  out.className = env.accessibility ? env.accessibility.colorContrast : null;
   console.debug('returning', JSON.stringify(out, null, '  '));
   return out;
 }
