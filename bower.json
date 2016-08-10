@@ -4,6 +4,6 @@
   "main" : "corespring-pie-true-false.html",
   "dependencies" : {
     "polymer": "Polymer/polymer#^1.0.0",
-    "corespring-true-false" : "git@bitbucket.org:pielibs/corespring-true-false.git"
+    "corespring-true-false" : "git@github.com:PieLabs/corespring-true-false.git"
   }
 }
