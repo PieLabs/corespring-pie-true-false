@@ -1,0 +1,8 @@
+{
+  "name": "tmp-bower-config",
+  "version": "1.0.0",
+  "dependencies": {
+    "corespring-pie-true-false": "/Users/edeustace/dev/github/PieLabs/corespring-pie-true-false",
+    "control-panel": "git@bitbucket.org:pielibs/control-panel.git"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id" : "config",
+  "title" : "config",
+  "type" : "object", 
+  "properties" : {
+    "model" : {
+      "type" : "object"
+    }
+  }
+}

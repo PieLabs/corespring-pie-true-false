@@ -1,7 +1,7 @@
-exports.state = function(question, session, env){
-  console.log('[state] question:', JSON.stringify(question, null, '  '));
-  console.log('[state] session:', JSON.stringify(session, null, '  '));
-  console.log('[state] env:', JSON.stringify(env, null, '  '));
+exports.model = function(question, session, env){
+  console.log('question:', JSON.stringify(question, null, '  '));
+  console.log('session:', JSON.stringify(session, null, '  '));
+  console.log('env:', JSON.stringify(env, null, '  '));
 
   var isCorrect =  session.selected === question.model.correctResponse.value;
 
